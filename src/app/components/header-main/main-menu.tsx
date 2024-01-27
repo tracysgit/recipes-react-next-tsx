@@ -1,18 +1,10 @@
 import MainMenuLink from "./main-menu-link";
-// import { getCategories } from "@/app/lib/data";
+import { getCategories } from "@/app/lib/localdata";
 import { capFirstLetter } from "@/app/utils/utils"
 
-const categories = [
-  "entrees",
-  "appetizers",
-  "soups",
-  "salads",
-  "sides",
-  "desserts",
-  "drinks"
-];
-
 export default function MainMenu() {
+    const categories = getCategories();
+
     return (
     <nav aria-label="Main Menu" className="mainmenu flex flex-col">
       {/* <input id="mainmenu-btn" type="checkbox" className="mainmenu-btn" />

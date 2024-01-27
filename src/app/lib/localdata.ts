@@ -6,7 +6,7 @@ export function getCategories() {
   return data.categories;
 }
 
-export function getRecipes() {
-  // await new Promise((resolve) => setTimeout(resolve, 5000));
+export async function getRecipes() {
+  await new Promise((resolve) => setTimeout(resolve, 5000));
   return data.recipes;
 }
