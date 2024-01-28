@@ -1,6 +1,6 @@
 import MainMenuLink from "./main-menu-link";
 import { getCategories } from "@/app/lib/localdata";
-import { capFirstLetter } from "@/app/utils/utils"
+import { capFirstLetter } from "@/app/utils/utils";
 
 export default function MainMenu() {
     const categories = getCategories();

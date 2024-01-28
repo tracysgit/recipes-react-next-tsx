@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { capFirstLetter } from '../utils/utils';
+import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }: { params: { categorySlug: string } }) {
   const category = params.categorySlug;

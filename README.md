@@ -1,6 +1,6 @@
 # To Do
 
-- How to pull in local JSON?
+- Fix main menu types for href
 - Style nav main menu
 - TSX add types
 - Mobile menu
@@ -17,3 +17,5 @@
 
 
 # Installation
+
+- "npx tsc filename.ts" to validate individual files

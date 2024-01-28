@@ -1,10 +1,15 @@
 'use client';
 
-import type { Route } from 'next';
+import { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-export default function MainMenuLink({ href, children }) {
+interface MainMenuLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+export default function MainMenuLink({ href, children }: MainMenuLinkProps) {
   const path = usePathname();
   const baseClasses = `mainmenu__link mx-1 px-2 py-2 border border-transparent rounded hover:border-white dark:hover:underline`;
   const activeClasses = `active underline`;
@@ -33,7 +38,5 @@ export default function MainMenuLink({ href, children }) {
         </Link>
       )}
     </>
-    // <Link href={href} aria-current="page" className="mainmenu__link active">{children}</Link>
-    // <Link href="/CATEGORIES" className="mainmenu__link">CATEGORIES</Link></li>
   )
 }

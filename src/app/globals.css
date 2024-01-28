@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Urbanist:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,6 +29,10 @@ body {
 }
 
 @layer base {
+  html {
+    font-size: 1rem;
+    /* font-family: 'Urbanist', Arial, "Proxima Nova", system-ui, sans-serif; */
+  }
   /* .bg-color {
     @apply bg-white dark:bg-black;
   }
