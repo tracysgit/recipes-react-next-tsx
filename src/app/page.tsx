@@ -3,9 +3,8 @@ import Link from 'next/link';
 import { getCategories, getRecipes } from '@/app/lib/localdata';
 import { capFirstLetter, sortArrayOfObjAsc } from "@/app/utils/utils";
 import CardImageTop from './components/cards/card-imagetop';
-import H1Headline from './components/headlines/h1Headline';
-import Search from './components/search/search';
 import HeaderPage from './components/header-page/header-page';
+import { Recipes } from './lib/definitions';
 
 export const metadata: Metadata = {
   title: 'Home | Recipes',
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const categories = getCategories();
-  const recipes = await getRecipes();
+  const recipes = await getRecipes<Recipes>();
   const recipesAscending = sortArrayOfObjAsc(recipes, 'name');
 
   return (
@@ -33,9 +32,9 @@ export default async function HomePage() {
                   .toLowerCase()
                   .includes(category.toLowerCase()),
               )
-              .map((recipe, index) => {
+              .map((recipe) => {
                 return (
-                  <li key={index}>
+                  <li key={recipe.name}>
                     <CardImageTop linkRoute={`/${recipe.category}`} card={recipe} />
                   </li>
                 );
