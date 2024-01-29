@@ -1,27 +1,35 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function CardImageTop() {
+interface CardImageTopProps {
+  linkRoute?: string;
+  card: {
+    name: string;
+    name_slug: string;
+    image: string;
+  };
+  children?: React.ReactNode;
+}
+
+export default function CardImageTop({ card, linkRoute }: CardImageTopProps) {
   return (
-    <div
-      className="card h-full max-w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-      <Link href="/CATEGORY/RECIPE-NAME">
+    <div className="card h-full max-w-full rounded-lg border border-gray-200 hover:border-gray-300 bg-white shadow hover:shadow-xl dark:bg-neutral-700 opacity-100 transition duration-300 ease-in-out hover:opacity-90">
+      <Link href={`${linkRoute}/${card.name_slug}`}>
         <Image
-            src="/images/dessert_anise-cookies.jpg"
-            alt="ALT"
-            className="card__image w-full rounded-t-lg"
+            src={`/images/${card.image ? card.image : 'image_placeholder.jpg'}`}
             width={400}
-            height={200}
+            height={150}
+            className="card__image w-full rounded-t-lg"
+            alt={card.image ? 'Image of ' + card.name : ''}
             style={{
               objectFit: 'cover',
               // width: '100%',
               height: '150px',
             }}
         />
-        <div className="card__body flex flex-col justify-between p-6">
-          <h3
-            className="mb-2 text-xl text-neutral-800 dark:text-neutral-50">
-            Card title
+        <div className="card__body flex flex-col justify-between px-4 py-4">
+          <h3 className="card__title mb-0 text-xl">
+            {card.name}
           </h3>
         </div>
       </Link>

@@ -1,13 +1,25 @@
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
-export const metadata: Metadata = {
-  title: 'Home | Recipes',  /////Fix me to be dynamic
-};
+// export async function generateMetadata({ params }: { params: { recipeSlug: string } }) {
+//   const recipe = params.recipeSlug;
+  
+//   if (!recipe) {
+//     notFound();
+//   }
+
+//   return {
+//     title: recipe.name
+//   };
+// }
 
 export default function RecipeSlugPage() {
+  //const recipe = params.recipeSlug;
+
   return (
     <>
-      <h1>RecipeSlugPage</h1>
+      {/* <h1>{recipe.name}</h1> */}
+      <p>recipe</p>
     </>
   );
 }

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 interface MainMenuLinkProps {
   href: string;
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export default function MainMenuLink({ href, children }: MainMenuLinkProps) {

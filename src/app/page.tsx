@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
-import { getCategories, getRecipes, getRecipesByCategory } from '@/app/lib/localdata';
+import Link from 'next/link';
+import { getCategories, getRecipes } from '@/app/lib/localdata';
 import { capFirstLetter, sortArrayOfObjAsc } from "@/app/utils/utils";
 import CardImageTop from './components/cards/card-imagetop';
+import H1Headline from './components/headlines/h1Headline';
 
 export const metadata: Metadata = {
   title: 'Home | Recipes',
@@ -19,11 +21,15 @@ export default async function HomePage() {
           <p>future breadcrumbs</p>
           <p>future search</p>
         </div>
-        <h1 id="header-page__headline">All Recipes</h1>
+        <H1Headline id="header-page__headline">All Recipes</H1Headline>
       </header>
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
-          <h2 id={`headline--${category}`} className="mt-2 pt-2 text-4xl lg:text-5xl text-blue-800 dark:text-white font-sacramento">{capFirstLetter(category)}</h2>
+          <h2 id={`headline--${category}`} className="mt-2 pt-2 text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento">
+            <Link href={`/${category.toLowerCase()}`} className="hover:underline">
+              {capFirstLetter(category)}
+            </Link>
+          </h2>
           <ul className="deck--grid-card-image-upper mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {recipesAscending
               .filter((recipe) =>
@@ -34,13 +40,7 @@ export default async function HomePage() {
               .map((recipe, index) => {
                 return (
                   <li key={index}>
-                    {/* <CardImageTop
-                      linkRoute={`/${recipe.category}/`}
-                      card={recipe}
-                      className=""
-                    >                      
-                    </CardImageTop> */}
-                    <p>{recipe.name}</p>
+                    <CardImageTop linkRoute={`/${recipe.category}`} card={recipe} />
                   </li>
                 );
               })}
