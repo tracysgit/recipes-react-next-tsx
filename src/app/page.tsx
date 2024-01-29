@@ -4,6 +4,8 @@ import { getCategories, getRecipes } from '@/app/lib/localdata';
 import { capFirstLetter, sortArrayOfObjAsc } from "@/app/utils/utils";
 import CardImageTop from './components/cards/card-imagetop';
 import H1Headline from './components/headlines/h1Headline';
+import Search from './components/search/search';
+import HeaderPage from './components/header-page/header-page';
 
 export const metadata: Metadata = {
   title: 'Home | Recipes',
@@ -16,13 +18,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <header className="header-page">
-        <div className="header-page__top">
-          <p>future breadcrumbs</p>
-          <p>future search</p>
-        </div>
-        <H1Headline id="header-page__headline">All Recipes</H1Headline>
-      </header>
+      <HeaderPage h1Id="header-page__headline" h1Text="All Recipes" hasBreadcrumbs={false} hasSearch={false} />
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
           <h2 id={`headline--${category}`} className="mt-2 pt-2 text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento">

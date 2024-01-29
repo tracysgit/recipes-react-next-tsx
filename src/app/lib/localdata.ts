@@ -19,3 +19,14 @@ export async function getRecipesByCategory(category: string) {
   ); 
   return filteredRecipes;
 }
+
+export async function getRecipe(slug: string) {
+  const recipes = await getRecipes();
+  const filteredRecipes = recipes.filter(recipe => recipe['name_slug'] === slug);
+
+  if (filteredRecipes) {
+    return filteredRecipes[0];
+  } else {
+    return null;
+  }
+}

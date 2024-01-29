@@ -1,24 +1,30 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import HeaderPage from '@/app/components/header-page/header-page';
+import { getRecipe } from '@/app/lib/localdata';
 
-// export async function generateMetadata({ params }: { params: { recipeSlug: string } }) {
-//   const recipe = params.recipeSlug;
+export async function generateMetadata({ params }: { params: { recipeSlug: string } }) {
+  const recipeSlug = params.recipeSlug;
+  const recipe = await getRecipe(recipeSlug);
   
-//   if (!recipe) {
-//     notFound();
-//   }
+  if (!recipe) {
+    notFound();
+  }
 
-//   return {
-//     title: recipe.name
-//   };
-// }
+  return {
+    title: recipe.name
+  };
+}
 
-export default function RecipeSlugPage() {
-  //const recipe = params.recipeSlug;
+export default async function RecipeSlugPage({ params }: { params: { recipeSlug: string } }) {
+  const recipeSlug = params.recipeSlug;
+  const recipe = await getRecipe(recipeSlug);
 
   return (
     <>
-      {/* <h1>{recipe.name}</h1> */}
+      <HeaderPage h1Id="header-page__headline" h1Text={'RECIPE NAME'} hasBreadcrumbs={true} hasSearch={false} />
       <p>recipe</p>
     </>
   );

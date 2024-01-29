@@ -1,9 +1,8 @@
 # To Do
 
 - Fix main menu types for href
+- Add mobile menu
 - Style nav main menu
-- TSX add types
-- Mobile menu
 - Add dynamic head content to each page
 - Error, not found, etc. pages
 - Add card or list views
