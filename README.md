@@ -1,20 +1,18 @@
 # To Do
 
-- Fix main menu types for href
-- Add mobile menu
-- Style nav main menu
-- Add dynamic head content to each page
 - Error, not found, etc. pages
 - Add card or list views
 - Add search bar
-- Dark mode
-- A11y issues
+- A11y issues, including mobile nav
 
 
 # Features
 
+- Built with React-Next.js
 
 
 # Installation
 
-- "npx tsc filename.ts" to validate individual files
+- Node.js 18.17.0 or later is required (check with "node -v").
+- To run dev: "npm install" then "npm run dev"
+- HTML Parser: "npm install html-react-parser --save" and "import parse from 'html-react-parser';"
