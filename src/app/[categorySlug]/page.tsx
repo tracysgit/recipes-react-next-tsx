@@ -27,7 +27,7 @@ export default async function CategorySlugPage({ params }: { params: { categoryS
 
   return (
     <>
-      <HeaderPage h1Id="header-page__headline" h1Text={capFirstLetter(category)} hasBreadcrumbs={true} hasSearch={false} />
+      <HeaderPage h1Id="header-page__headline" h1Text={capFirstLetter(category)} hasBreadcrumbs={false} hasSearch={false} />
       <section id={`section--${category}`} aria-label={`${capFirstLetter(category)} Recipes`} className="">
         <ul className="deck--grid-card-image-upper mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {recipesAscending.map((recipe) =>

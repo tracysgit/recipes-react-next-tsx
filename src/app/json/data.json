@@ -10,6 +10,58 @@
   ],
   "recipes": [
     {
+      "name": "Beef Meatballs with Lemon and Celery Root",
+      "name_slug": "beef-meatballs-with-lemon-and-celery-root",
+      "category": "entrees",
+      "tags": "beef, lemon, celery root",
+      "ingredients": "",
+      "directions": "",
+      "source": "",
+      "source_link": "",
+      "servings": "4",
+      "image": "entrees_beef-meatballs-with-lemon-and-celery-root.jpg",
+      "image_fullrecipe": "recipe_beef-meatballs-with-lemon-and-celery-root.jpg"
+    },
+    {
+      "name": "Wine Suggestions",
+      "name_slug": "wine-suggestions",
+      "category": "drinks",
+      "tags": "red, white, wine",
+      "ingredients": "",
+      "directions": "",
+      "source": "",
+      "source_link": "",
+      "servings": "",
+      "image": "drinks_wine-suggestions.webp",
+      "image_fullrecipe": "recipe_wine-suggestions.jpg"
+    },
+    {
+      "name": "Two Types of Shortcakes",
+      "name_slug": "two-types-of-shortcakes",
+      "category": "desserts",
+      "tags": "oat, peaches, basil, plums, mascarpone",
+      "ingredients": "",
+      "directions": "",
+      "source": "",
+      "source_link": "",
+      "servings": "8",
+      "image": "desserts_two-types-of-shortcakes.jpg",
+      "image_fullrecipe": "recipe_two-types-of-shortcakes.jpg"
+    },
+    {
+      "name": "French Baguettes",
+      "name_slug": "french-baguettes",
+      "category": "sides",
+      "tags": "flour, bread",
+      "ingredients": "1/4 c. (1-1/3 oz.) whole-wheat flour\n3 c. (15 oz.) King Aruthur all-purpose flour\n1-1/2 t. salt\n1 t. instant or rapid-rise yeast\n1 t. diastatic malt powder (optional)\n1-1/2 c. (12 oz.) water\n2 16\" x 12\" aluminum roasting pans",
+      "directions": "Sift whole-wheat flour through a fine-mesh strainer into bowl of stand mixer; discard bran remaining in strainer. Add all-purpose flour, salt, yeast, and malt powder, if using, to mixer bowl. Fit stand mixer with dough hook, add water, and knead on low speed until cohesive dough forms and no dry flour remains, 5-7 minutes. Transfer dough to large, lightly oiled bowl, cover bowl with plastic wrap, and let dough rest at room temperature for 30 minutes.\nHolding edge of dough with your fingertips, fold dough over itself by gently lifting and folding edge of dough toward middle. Turn bowl 45 degrees; fold again. Turn bowl and fold six more times.",
+      "source": "",
+      "source_link": "",
+      "servings": "Four 15-inch-long baguettes",
+      "image": "sides_french-baguettes.jpg",
+      "image_fullrecipe": "recipe_french-baguettes.jpg"
+    },
+    {
       "name": "Fish en Papillote",
       "name_slug": "fish-en-papillote",
       "category": "entrees",

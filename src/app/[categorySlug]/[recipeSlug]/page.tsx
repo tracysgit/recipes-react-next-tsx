@@ -45,7 +45,7 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
           <HeaderPage h1Id="header-page__headline" h1Text={recipe.name} hasBreadcrumbs={true} hasSearch={false} />
           
           <section aria-labelledby="headline-recipe" className="recipe__wrapper grid md:grid-cols-1 gap-8">
-            <div className="recipe__intro grid md:grid-cols-2 gap-8">
+            <div className="recipe__intro grid md:grid-cols-2 gap-4">
               <div className="recipe__title flex flex-col order-last md:order-first"> 
                 {recipe.servings && <p className="text-lg text-gray-900 dark:text-white mt-2 md:mt-0"><span className="font-semibold">Servings: </span>{recipe.servings}</p>}
                 {recipe.category && <p className="text-lg text-gray-900 dark:text-white"><span className="font-semibold">Category: </span>{capFirstLetter(recipe.category)}</p>}
@@ -88,15 +88,16 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
               <div className="recipe__directions">
                 <Image
                   src={`/images/${recipe['image_fullrecipe']}`}
-                  width={400}
+                  width={1100}
                   height={400}
-                  className="w-auto h-auto mx-auto"
+                  className="w-full h-auto mx-auto"
                   alt={`Image of ${recipe['image_fullrecipe']} `}
                   priority
+                  quality={100}
                   style={{
                     // objectFit: 'contain',
                     // width: 'auto',
-                    // height: 'auto',
+                    height: 'auto',
                   }}
                 />
               </div>
