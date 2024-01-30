@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 .mainnav .mainmenu {
-  overflow: hidden;
+  /* overflow: hidden; */
   clear: both;
   max-height: 0;
   transition: max-height .3s ease-out;
