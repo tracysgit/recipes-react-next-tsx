@@ -17,7 +17,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <HeaderPage h1Id="header-page__headline" h1Text="All Recipes" hasBreadcrumbs={false} hasSearch={false} />
+      <HeaderPage h1Id="header-page__headline" h1Text="All Recipes" hasBreadcrumbs={false} hasSearch={false} hasFormatToggle={false} />
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
           <h2 id={`headline--${category}`} className="mt-2 pt-2 text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento">
@@ -25,7 +25,22 @@ export default async function HomePage() {
               {capFirstLetter(category)}
             </Link>
           </h2>
-          <ul className="deck--grid-card-image-upper mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {/* <ul className="deck--list list-disc mb-10 ml-6 mt-3">
+            {recipesAscending
+              .filter((recipe) =>
+                recipe.category
+                  .toLowerCase()
+                  .includes(category.toLowerCase()),
+              )
+              .map((recipe, index) => {
+                return (
+                  <li key={index}>
+                    <Link href={`/${recipe.category}/${recipe.name_slug}`} className="underline hover:text-gray-600">{recipe.name}</Link>
+                  </li>
+                );
+              })}
+          </ul> */}
+          <ul className="deck--grid-card mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {recipesAscending
               .filter((recipe) =>
                 recipe.category

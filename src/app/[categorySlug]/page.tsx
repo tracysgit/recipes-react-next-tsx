@@ -4,7 +4,7 @@ import { capFirstLetter, sortArrayOfObjAsc } from "@/app/utils/utils";
 import CardImageTop from '@/app/components/cards/card-imagetop';
 import H1Headline from '@/app/components/headlines/h1Headline';
 import { notFound } from 'next/navigation';
-import Search from '../components/search/search';
+import Search from '../components/header-page/search/search';
 import HeaderPage from '../components/header-page/header-page';
 
 
