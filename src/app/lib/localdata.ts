@@ -1,17 +1,17 @@
 import data from '@/app/json/data.json';
-import { Categories, Recipes } from './definitions';
+import { TCategories, TRecipes } from './definitions';
 
-export function getCategories <Categories> () {
+export function getCategories <TCategories> () {
   // await new Promise((resolve) => setTimeout(resolve, 0));
   return data.categories;
 }
 
-export async function getRecipes <Recipes> () {
+export async function getRecipes <TRecipes> () {
   await new Promise((resolve) => setTimeout(resolve, 0));
   return data.recipes;
 }
 
-export async function getRecipesByCategory <Recipes> (category: string) {
+export async function getRecipesByCategory <TRecipes> (category: string) {
   const recipes = await getRecipes();
   const filteredRecipes = (recipes).filter((recipe) =>
     recipe.category
@@ -21,7 +21,7 @@ export async function getRecipesByCategory <Recipes> (category: string) {
   return filteredRecipes;
 }
 
-export async function getRecipe <Recipes> (slug: string) {
+export async function getRecipe <TRecipes> (slug: string) {
   // const recipes: Recipes = await getRecipes;
   const recipes = await getRecipes();
   const filteredRecipes = recipes.filter(recipe => recipe['name_slug'] === slug);

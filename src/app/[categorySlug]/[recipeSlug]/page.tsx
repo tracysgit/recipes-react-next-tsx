@@ -3,13 +3,12 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import HeaderPage from '@/app/components/header-page/header-page';
-import H1Headline from '@/app/components/headlines/h1Headline';
 import { getRecipe } from '@/app/lib/localdata';
 import { capFirstLetter } from '@/app/utils/utils';
-import { Recipes } from '@/app/lib/definitions';
+import { TRecipe } from '@/app/lib/definitions';
 
 export async function generateMetadata({ params }: { params: { recipeSlug: string } }) {
-  const recipeSlug = params.recipeSlug;
+  const recipeSlug: string = params.recipeSlug;
   const recipe = await getRecipe(recipeSlug);
   
   if (!recipe) {
@@ -22,8 +21,8 @@ export async function generateMetadata({ params }: { params: { recipeSlug: strin
 }
 
 export default async function RecipeSlugPage({ params }: { params: { recipeSlug: string } }) {
-  const recipeSlug = params.recipeSlug;
-  const recipe = await getRecipe<Recipes>(recipeSlug);
+  const recipeSlug: string = params.recipeSlug;
+  const recipe = await getRecipe<TRecipe>(recipeSlug);
   let ingredients_edited:string = ''; 
   let directions_edited:string = ''; 
   let tags_array: Array<string> = [];

@@ -1,9 +1,10 @@
+import { TCategories } from "@/app/lib/definitions";
 import MainMenuLink from "./main-menu-link";
 import { getCategories } from "@/app/lib/localdata";
 import { capFirstLetter } from "@/app/utils/utils";
 
 export default function MainMenu() {
-    const categories = getCategories();
+    const categories: TCategories = getCategories();
 
     return (
     <nav aria-label="Main Menu" className="mainnav flex flex-col items-center md:items-start">

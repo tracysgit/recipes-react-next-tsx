@@ -1,13 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { TRecipe } from '@/app/lib/definitions';
 
 interface CardImageTopProps {
   linkRoute?: string;
-  card: {
-    name: string;
-    name_slug: string;
-    image: string;
-  };
+  card: TRecipe;
   children?: React.ReactNode;
 }
 
