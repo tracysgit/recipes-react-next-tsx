@@ -101,8 +101,8 @@
       "image_fullrecipe": "recipe_wine-suggestions.jpg"
     },
     {
-      "name": "Two Types of Shortcakes",
-      "name_slug": "two-types-of-shortcakes",
+      "name": "Shortcakes",
+      "name_slug": "shortcakes",
       "category": "desserts",
       "tags": "oat, peaches, basil, plums, mascarpone",
       "ingredients": "",
@@ -110,8 +110,8 @@
       "source": "",
       "source_link": "",
       "servings": "8",
-      "image": "desserts_two-types-of-shortcakes.jpg",
-      "image_fullrecipe": "recipe_two-types-of-shortcakes.jpg"
+      "image": "desserts_shortcakes.jpg",
+      "image_fullrecipe": "recipe_shortcakes.jpg"
     },
     {
       "name": "French Baguettes",
