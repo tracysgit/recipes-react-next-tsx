@@ -25,9 +25,9 @@ export default async function CategorySlugPage({ params }: { params: { categoryS
 
   return (
     <>
-      <HeaderPage h1Id="header-page__headline" h1Text="All Recipes" hasBreadcrumbs={false} hasSearch={false} hasFormatToggle={false} />
+      <HeaderPage h1Id="header-page__headline" h1Text={capFirstLetter(category)} hasBreadcrumbs={false} hasSearch={false} hasFormatToggle={false} />
 
-      <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-2 md:mb-4 lg:mb-6" showFormatToggle={true} formatToggleClasses="mt-2 mb-2 md:mb-4 lg:mb-6" />
+      <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-2 md:mb-4 lg:mb-6" showH2Headline={false} showFormatToggle={true} formatToggleClasses="mt-2 mb-2 md:mb-4 lg:mb-6" />
     </>
   );
 }

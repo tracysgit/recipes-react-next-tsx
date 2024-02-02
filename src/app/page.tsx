@@ -16,9 +16,9 @@ export default async function HomePage() {
   
   return (
     <>
-      <HeaderPage h1Id="header-page__headline" h1Text="All Recipes" hasBreadcrumbs={false} hasSearch={false} hasFormatToggle={false} />
+      <HeaderPage h1Id="header-page__headline" h1Text="All Recipes" hasBreadcrumbs={false} hasSearch={false} />
 
-      <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-2 md:mb-4 lg:mb-6" showFormatToggle={true} formatToggleClasses="mt-2 mb-2 md:mb-4 lg:mb-6" />
+      <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-4 md:mb-8 lg:mb-10 mt-[5px]" showH2Headline={true} showFormatToggle={true} formatToggleClasses="mt-2 mb-6 md:mb-8 lg:mb-10" />
     </>
   )
 }

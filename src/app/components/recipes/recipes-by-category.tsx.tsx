@@ -1,6 +1,6 @@
 'use client';
 
-import { MouseEvent, useEffect, useState } from 'react';
+import { MouseEvent, useState } from 'react';
 import CardImageTop from '../cards/card-imagetop';
 import { capFirstLetter } from "@/app/utils/utils";
 import { TCategories, TRecipes } from '@/app/lib/definitions';
@@ -9,6 +9,7 @@ import Link from 'next/link';
 type RecipesByCategoryProps = {
   recipes?: TRecipes;
   categories: TCategories;
+  showH2Headline?: boolean;
   showFormatToggle: boolean;
   formatToggleClasses?: string;
   deckClasses?: string;
@@ -16,7 +17,7 @@ type RecipesByCategoryProps = {
   children?: React.ReactNode;
 };
 
-export default function RecipesByCategory({ deckClasses, showFormatToggle, formatToggleClasses, categories, recipes }: RecipesByCategoryProps) {
+export default function RecipesByCategory({ showH2Headline, showFormatToggle, formatToggleClasses, categories, recipes, deckClasses, cardClasses }: RecipesByCategoryProps) {
   const [format, setFormat] = useState('list');
 
   const handleFormatSelect = (e: MouseEvent<HTMLButtonElement>): void => {
@@ -71,14 +72,14 @@ export default function RecipesByCategory({ deckClasses, showFormatToggle, forma
       
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
-          <h2 id={`headline--${category}`} className="mt-2 pt-2 text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento">
+          {showH2Headline && <h2 id={`headline--${category}`} className="text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento mb-0">
             <Link href={`/${category.toLowerCase()}`} className="hover:underline">
               {capFirstLetter(category)}
             </Link>
-          </h2>
+          </h2>}
           
           {format === 'list' &&
-            <ul className="deck--list list-disc mb-10 ml-6 mt-1">
+            <ul className={`deck--list list-disc mb-10 ml-6 mt-4 ${deckClasses}`}>
               {recipes && recipes
                 .filter((recipe) =>
                   recipe.category
@@ -95,7 +96,7 @@ export default function RecipesByCategory({ deckClasses, showFormatToggle, forma
             </ul>
           }
           {format === 'cards' &&
-            <ul className="deck--grid-card mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <ul className={`deck--grid-card mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ${deckClasses}`}>
               {recipes && recipes
                 .filter((recipe) =>
                   recipe.category
