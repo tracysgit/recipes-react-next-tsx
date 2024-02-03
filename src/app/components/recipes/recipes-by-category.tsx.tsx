@@ -88,7 +88,7 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
                 )
                 .map((recipe, index) => {
                   return (
-                    <li key={index}>
+                    <li key={index} className="text-lg mb-[16px]">
                       <Link href={`/${recipe.category}/${recipe.name_slug}`} className="underline hover:text-gray-600">{recipe.name}</Link>
                     </li>
                   );
