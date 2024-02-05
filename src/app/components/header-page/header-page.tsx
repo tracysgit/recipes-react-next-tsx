@@ -4,7 +4,7 @@
 // import { capFirstLetter } from "@/app/utils/utils";
 import Breadcrumbs from "../breadcrumbs/breadcrumbs";
 import H1Headline from "../headlines/h1Headline";
-import Search from "./search/search";
+// import Search from "../search/search";
 
 interface HeaderPageProps {
   h1Id: string;
@@ -26,7 +26,7 @@ export default function HeaderPage({ h1Id, h1Text, hasBreadcrumbs, hasSearch, ha
       <header className="header-page mb-2 md:mb-4 lg:mb-6">
         <div className={`flex flex-col md:flex-row gap-4 justify-between ${addSpaceBelow}`}>
           {hasBreadcrumbs && <Breadcrumbs />}
-          {hasSearch && <Search />}
+          {/* {hasSearch && <Search />} */}
         </div>
         <H1Headline id={h1Id}>{h1Text}</H1Headline>
       </header>
