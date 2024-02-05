@@ -1,7 +1,6 @@
 # To Do
 
 - Error, not found, etc. pages
-- Add search bar
 - A11y issues, including mobile nav
 
 

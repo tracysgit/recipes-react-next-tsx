@@ -5,6 +5,7 @@ import CardImageTop from '../cards/card-imagetop';
 import { capFirstLetter } from "@/app/utils/utils";
 import { TCategories, TRecipes } from '@/app/lib/definitions';
 import Link from 'next/link';
+import H1Headline from '../headlines/h1Headline';
 
 type RecipesByCategoryProps = {
   recipes?: TRecipes;
@@ -43,33 +44,34 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
 
   return (
     <>
-      <div className="format-toggle__wrapper">
-      {showFormatToggle && 
-        <div className={`inline-flex rounded-md shadow-sm ${formatToggleClasses}`} role="group">
-          <button 
-            id="btn-list"
-            type="button" 
-            className={`${btnClassesBase} rounded-s-lg ${format === 'list' ? btnClassesActive : null}`}
-            data-format="list"
-            onClick={handleFormatSelect}
-          >
-          {iconList}
-          List
-          </button>
-          <button 
-            id="btn-cards"
-            type="button" 
-            className={`${btnClassesBase} rounded-e-lg ${format === 'cards' ? btnClassesActive : null}`}
-            data-format="cards"
-            onClick={handleFormatSelect}
-          >
-            {iconCard}
-            Cards
-          </button>
-        </div>
-      }
-      </div>
-      
+      <header className="format-toggle__wrapper flex flex-col md:flex-row justify-between mb-6 md:mb-8 lg:mb-10 border-0">
+        <H1Headline id="header-page__headline" extraclasses="">{categories.length === 1 ? capFirstLetter(categories[0]) : 'All Recipes'}</H1Headline>
+        {showFormatToggle && 
+          <div className={`inline-flex rounded-md mt-4 md:mt-0 ${formatToggleClasses}`} role="group">
+            <button 
+              id="btn-list"
+              type="button" 
+              className={`${btnClassesBase} rounded-s-lg ${format === 'list' ? btnClassesActive : null}`}
+              data-format="list"
+              onClick={handleFormatSelect}
+            >
+            {iconList}
+            List
+            </button>
+            <button 
+              id="btn-cards"
+              type="button" 
+              className={`${btnClassesBase} rounded-e-lg ${format === 'cards' ? btnClassesActive : null}`}
+              data-format="cards"
+              onClick={handleFormatSelect}
+            >
+              {iconCard}
+              Cards
+            </button>
+          </div>
+        }
+      </header>
+
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
           {showH2Headline && <h2 id={`headline--${category}`} className="text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento mb-0">

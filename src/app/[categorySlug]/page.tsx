@@ -1,9 +1,9 @@
-import { getRecipesByCategory } from '@/app/lib/localdata';
+import { getRecipes, getRecipesByCategory } from '@/app/lib/localdata';
 import { capFirstLetter, sortArrayOfObjAsc } from "@/app/utils/utils";
-import RecipesByCategory from '../components/recipes/recipes-by-category.tsx';
+import RecipesByCategory from '@/app/components/recipes/recipes-by-category.tsx';
 import { notFound } from 'next/navigation';
-import HeaderPage from '../components/header-page/header-page';
-import { TRecipes } from '../lib/definitions';
+import Search from '@/app/components/search/search';
+import { TRecipes } from '@/app/lib/definitions';
 
 export async function generateMetadata({ params }: { params: { categorySlug: string } }) {
   const category: string = params.categorySlug;
@@ -22,10 +22,15 @@ export default async function CategorySlugPage({ params }: { params: { categoryS
   const categories: Array<string> = [category];
   const recipes: TRecipes = await getRecipesByCategory(category);
   const recipesAscending: TRecipes = sortArrayOfObjAsc(recipes, 'name');
+  const allRecipes: TRecipes = await getRecipes();
+  const allRecipesAscending: TRecipes = sortArrayOfObjAsc(allRecipes, 'name');
 
   return (
     <>
-      <HeaderPage h1Id="header-page__headline" h1Text={capFirstLetter(category)} hasBreadcrumbs={false} hasSearch={false} hasFormatToggle={false} />
+      {/* <HeaderPage h1Id="header-page__headline" h1Text={capFirstLetter(category)} hasBreadcrumbs={false} hasSearch={false} hasFormatToggle={false} /> */}
+      <section className="search__container" aria-label="Search for Recipes">
+        <Search recipes={allRecipesAscending} />
+      </section>
 
       <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-2 md:mb-4 lg:mb-6" showH2Headline={false} showFormatToggle={true} formatToggleClasses="mt-2 mb-2 md:mb-4 lg:mb-6" />
     </>

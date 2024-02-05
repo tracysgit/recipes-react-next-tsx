@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useDebouncedCallback } from 'use-debounce';
+// import { useDebouncedCallback } from 'use-debounce';
 import Link from 'next/link';
 import { TRecipes } from '@/app/lib/definitions';
 
@@ -39,8 +39,8 @@ export default function Search({ recipes }: SearchProps) {
 
 
   return (
-    <div className="search__wrapper w-full mb-4 md:mb-6 lg:mb-8">
-      <div className="search__form flex flex-col w-full md:w-1/2 lg:w-1/4">
+    <div className="search__wrapper w-full flex flex-col content-end mb-6 md:mb-8 lg:mb-10">
+      <div className="search__form flex flex-row justify-end w-full">
         <div className="relative flex flex-1 flex-shrink-0">
           <label htmlFor="search" className="sr-only">
             Search
@@ -70,7 +70,7 @@ export default function Search({ recipes }: SearchProps) {
         <div className="search__results bg-neutral-100 rounded-lg border border-neutral-200 p-4 md:p-6 w-full mt-4">
           <p className="text-lg font-semibold text-gray-900 dark:text-white">Search Results:</p>
           {searchResults && searchResults.length > 0 ? (
-              <ul className="list-disc columns-1 md:columns-2 gap-4 ml-6 mt-4">
+              <ul className="list-disc columns-1 md:columns-2 gap-8 ml-6 mt-4">
                 {filteredRecipes}
               </ul>
           ) : (
