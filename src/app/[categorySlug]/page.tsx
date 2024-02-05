@@ -32,7 +32,7 @@ export default async function CategorySlugPage({ params }: { params: { categoryS
         <Search recipes={allRecipesAscending} />
       </section>
 
-      <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-2 md:mb-4 lg:mb-6" showH2Headline={false} showFormatToggle={true} formatToggleClasses="mt-2 mb-2 md:mb-4 lg:mb-6" />
+      <RecipesByCategory categories={categories} recipes={recipesAscending} deckClasses="mb-2 md:mb-4 lg:mb-6" showH2Headline={false} showFormatToggle={true} formatToggleClasses="" />
     </>
   );
 }
