@@ -6,7 +6,6 @@ import Search from '@/app/components/search/search';
 import RecipesByCategory from '@/app/components/recipes/recipes-by-category.tsx';
 import { TCategories, TRecipes } from '@/app/lib/definitions';
 import H1Headline from './components/headlines/h1Headline';
-// import RecipeListFormat from './components/recipes/recipe-list-format';
 
 export const metadata: Metadata = {
   title: 'Home | Recipes',
@@ -29,5 +28,3 @@ export default async function HomePage() {
     </>
   )
 }
-
-// mt-2 mb-6 md:mb-8 lg:mb-10

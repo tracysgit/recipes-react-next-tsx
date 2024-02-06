@@ -40,9 +40,8 @@ export default function Search({ recipes }: SearchProps) {
 
   return (
     <div className="search__wrapper w-full flex flex-col content-end mb-6 md:mb-8 lg:mb-10">
-      <div className="search__form flex flex-row justify-end max-w-full">
-        {/* <div className="relative flex flex-1 flex-shrink-0"> */}
-        <div className="relative flex flex-1">
+      <div className="search__form flex flex-row justify-end">
+        <div className="relative flex flex-1 flex-shrink-0">
           <label htmlFor="search" className="sr-only">
             Search
           </label>
