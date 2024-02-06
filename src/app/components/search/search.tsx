@@ -26,7 +26,7 @@ export default function Search({ recipes }: SearchProps) {
     setSearchInput(term);
 
     //Search names, tags, and ingredients
-    setSearchResults(recipes?.filter((recipe) => recipe.name.toLowerCase().includes(term.toLowerCase()) || recipe.ingredients?.toLowerCase().includes(term.toLowerCase()) || recipe.tags?.toLowerCase().includes(term.toLowerCase())));
+    setSearchResults(recipes?.filter((recipe) => recipe.name.toLowerCase().includes(term.toLowerCase()) || recipe.ingredients?.toLowerCase().includes(term.toLowerCase()) || recipe.tags?.toLowerCase().includes(term.toLowerCase()) || recipe.category?.toLowerCase().includes(term.toLowerCase()) ));
 
   // }, 300);
   };
