@@ -81,7 +81,7 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
           </h2>}
           
           {format === 'list' &&
-            <ul className={`deck--list list-disc mb-10 ml-6 mt-4 ${deckClasses}`}>
+            <ul className={`deck--list list-disc mb-10 ml-6 mt-4 grid grid-cols-1 lg:grid-cols-2 ${deckClasses}`}>
               {recipes && recipes
                 .filter((recipe) =>
                   recipe.category
@@ -90,7 +90,7 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
                 )
                 .map((recipe, index) => {
                   return (
-                    <li key={index} className="text-lg mb-[5px]">
+                    <li key={index} className="text-lg mb-[5px] mr-2">
                       <Link href={`/${recipe.category}/${recipe.name_slug}`} className="underline hover:text-gray-600">{recipe.name}</Link>
                     </li>
                   );
