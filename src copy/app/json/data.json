@@ -10,32 +10,6 @@
   ],
   "recipes": [
     {
-      "name": "Fresh Pasta",
-      "name_slug": "fresh-pasta",
-      "category": "entrees",
-      "tags": "noodles, pasta",
-      "ingredients": "",
-      "directions": "",
-      "source": "",
-      "source_link": "",
-      "servings": "4-6",
-      "image": "entrees_fresh-pasta.jpg",
-      "image_fullrecipe": "recipe_fresh-pasta.jpg"
-    },
-    {
-      "name": "Honeyed Chickpeas",
-      "name_slug": "honeyed-chickpeas",
-      "category": "entrees",
-      "tags": "garbanzos, tahini",
-      "ingredients": "500 gm (pre-boiled) chickpeas\n1/2 cup olive oil\n1/2 onion, cut into cubes\n2 cloves grated garlic\n1 red pepper, sliced\n2 cups vegetable broth\n3 handfuls of spinach\n2 tablespoons tahini\n1 lemon\nSalt\nPepper",
-      "directions": "Coming soon.",
-      "source": "",
-      "source_link": "",
-      "servings": "6",
-      "image": "entrees_honeyed-chickpeas.jpg",
-      "image_fullrecipe": ""
-    },
-    {
       "name": "French Apple Cake",
       "name_slug": "french-apple-cake",
       "category": "desserts",
