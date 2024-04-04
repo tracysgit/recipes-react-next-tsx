@@ -1,6 +1,7 @@
 'use client';
 
 import { MouseEvent, useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { TCategories } from "@/app/lib/definitions";
 import MainMenuLink from "./main-menu-link";
 import { getCategories } from "@/app/lib/localdata";
@@ -9,8 +10,14 @@ import { capFirstLetter } from "@/app/utils/utils";
 import styles from './main-menu.module.scss';
 
 export default function MainMenu() {
-    const categories: TCategories = getCategories();
     const [openMainmenu, setopenMainmenu] = useState(false);
+    const categories: TCategories = getCategories();
+    const path = usePathname();
+    
+    // Hide the mobile main menu upon page load
+    useEffect(() => {
+      setopenMainmenu(false);
+    }, [path]);
 
     const handleToggleClick = (e: MouseEvent<HTMLButtonElement>) => {
       e.preventDefault();
