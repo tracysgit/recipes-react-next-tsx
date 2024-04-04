@@ -1,0 +1,72 @@
+/* CSS Icon Mobile Menu 
+-----------------------*/
+.mainnav {
+  // display: flex;
+  // flex-flow: column nowrap;
+  // align-items: center;
+  // margin: 0 auto;
+
+  .mainmenu {
+    // display: flex;
+    list-style-type:"";
+    margin-bottom: 12px;
+
+    &.mobile-hidden {
+      display: none;
+    }
+  }
+
+  .mainmenu-toggle {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    user-select: none;
+    border: 0;
+    padding: 28px 20px;
+
+    .navicon {
+      background-color: #FFF;
+      display: block;
+      height: 3px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 25px;
+      -webkit-transition: background .2s ease-out;
+      -moz-transition: background .2s ease-out;
+      -ms-transition: background .2s ease-out;
+      -o-transition: background .2s ease-out;
+    }
+    .navicon:before,
+    .navicon:after {
+      background-color: #FFF;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+        -webkit-transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+    }
+    .navicon:before {
+        top: 8px;
+    }
+    .navicon:after {
+        top: -8px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .mainmenu {
+      &.mobile-hidden {
+        display: flex;
+      }
+    }
+
+    .mainmenu-toggle {
+      display: none;
+    }
+  }
+}
