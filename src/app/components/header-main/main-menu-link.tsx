@@ -23,20 +23,13 @@ export default function MainMenuLink({ href, children }: MainMenuLinkProps) {
 
   return (
     <>
-      {isActiveLink ? (
-        <Link 
-          href={href} 
-          className={`${baseClasses} ${activeClasses}`}
-          aria-current="page">
-            {children}
-        </Link>
-      ) : (
-        <Link 
-          href={href} 
-          className={`${baseClasses}`}>
-            {children}
-        </Link>
-      )}
+      <Link 
+        href={href} 
+        className={`${baseClasses}${isActiveLink ? ' ' + activeClasses : ''}`}
+        aria-current={isActiveLink ? 'page' : undefined}
+      >
+        {children}
+      </Link>
     </>
   )
 }
