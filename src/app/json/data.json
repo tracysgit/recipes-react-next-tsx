@@ -10,6 +10,19 @@
   ],
   "recipes": [
     {
+      "name": "Smoked Fish with Marinade",
+      "name_slug": "smoked-fish-with-marinade",
+      "category": "entrees",
+      "tags": "marinade, fish",
+      "ingredients": "1/3 c. brown sugar\n1/3 c. olive oil\n1/3 c. red wine vinegar\n1/2 medium onion or big shallot\n2 cloves garlic, minced\n1 small bunch thyme, stripped\n1 T. salt\n1 t. black pepper, ground\n1.5-2 lbs. salmon or trout",
+      "directions": "Mix together all ingredients except fish into a marinade. Marinate fish flesh side down for 45 minutes. Hot smoke fish on grill for 45 minutes. Place remaining marinade into saute pan and gently reduce for 5-7 minutes. Reduced marinade is excellent as a sauce for the cooked fish and as a salad dressing.",
+      "source": "",
+      "source_link": "",
+      "servings": "4",
+      "image": "entrees_smoked-fish-with-marinade.jpg",
+      "image_fullrecipe": ""
+    },
+    {
       "name": "Colcannon",
       "name_slug": "colcannon",
       "category": "sides",
