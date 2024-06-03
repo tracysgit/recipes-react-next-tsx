@@ -10,6 +10,32 @@
   ],
   "recipes": [
     {
+      "name": "Pie Crust",
+      "name_slug": "pie-crust",
+      "category": "desserts",
+      "tags": "pastry",
+      "ingredients": "300 g all-purpose flour\n2 sticks of unsalted butter, chilled\n1 c. ice water\n1 t. salt",
+      "directions": "Mix together the dry ingredients. Cube the butter, and smash each cube between your fingers in the flour mixture. Slowly add the ice water and mix until the dough just holds together and isn't too powdery or too wet. Form into two discs and refrigerate.",
+      "source": "",
+      "source_link": "",
+      "servings": "2 crusts",
+      "image": "desserts_pie-crust.jpg",
+      "image_fullrecipe": ""
+    },
+    {
+      "name": "Bumbleberry Pie",
+      "name_slug": "bumbleberry-pie",
+      "category": "desserts",
+      "tags": "berry, pie, fruit, tart",
+      "ingredients": "2 pie crust disks\n1 to 1-1/2 c. (200-300 gm) granulated sugar\n6 T. corn starch\n6 c. mixed berries (blueberries, raspberries, blackberries), washed\n2 T. lemon juice\n2 T. Grand Marnier liquor\n1 c. fresh bread crumbs\n4 T. butter cold and cubed\negg wash",
+      "directions": "Preheat the oven to 400&#8457;. Roll out the pie crusts, and place one in the bottom of a pie pan. Cover and refrigerate while you make the pie filling.<br /><br />Whisk the sugar and corn starch together in a large bowl. Gently fold in the berries, lemon juice, and liquor. Scatter the breadcrumbs across the center of the dough, leaving a 2-inch border. Scrape the berry filling into the pie pan, and scatter the butter cubes across the berries. Cover with the second crust, and seal the edges by fluting. Brush on the egg wash, and sprinkle with some granulated sugar.<br /><br />Place the pie in the oven over a baking sheet to catch any butter drips. Bake for 30 minutes at 400&#8457;, then reduce the temperature to 375&#8457; and bake for 30 minutes more.",
+      "source": "When Pies Fly",
+      "source_link": "",
+      "servings": "8",
+      "image": "desserts_bumbleberry-pie.jpg",
+      "image_fullrecipe": ""
+    },
+    {
       "name": "Smoked Fish with Marinade",
       "name_slug": "smoked-fish-with-marinade",
       "category": "entrees",
