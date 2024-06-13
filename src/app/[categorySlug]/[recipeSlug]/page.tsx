@@ -90,7 +90,7 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
                   width={1100}
                   height={400}
                   className="w-full border border-gray-400 h-auto mx-auto"
-                  alt={`Image of ${recipe['image_fullrecipe']} `}
+                  alt={`Image of ${recipe.name} recipe`}
                   priority
                   quality={100}
                   style={{

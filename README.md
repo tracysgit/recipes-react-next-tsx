@@ -6,6 +6,9 @@
 # Features
 
 - Built with React-Next.js
+- If a mobile device is detected, then the user is presented with a compact list of recipes. If a larger device is detected, then the user is presented with a list of cards with images.
+- A search provides easy access to search recipes, tags, and titles.
+- The website was built with accessibility in mind.
 
 
 # Installation

@@ -1,9 +1,10 @@
 'use client';
 
-import { MouseEvent, useState } from 'react';
+import { MouseEvent, useEffect, useState } from 'react';
 import CardImageTop from '../cards/card-imagetop';
 import { capFirstLetter } from "@/app/utils/utils";
 import { TCategories, TRecipes } from '@/app/lib/definitions';
+// import useDeviceDetection from '@/app/hooks/useDeviceDetection';
 import Link from 'next/link';
 import H1Headline from '../headlines/h1Headline';
 
@@ -20,6 +21,25 @@ type RecipesByCategoryProps = {
 
 export default function RecipesByCategory({ showH2Headline, showFormatToggle, formatToggleClasses, categories, recipes, deckClasses, cardClasses }: RecipesByCategoryProps) {
   const [format, setFormat] = useState('list');
+  
+  useEffect(() => {
+    const handleListFormat = () => {
+      const isMobile = window.innerWidth <= 768;
+
+      if (isMobile) {
+        setFormat('list');
+      } else {
+        setFormat('cards');
+      }
+    };
+
+    handleListFormat();
+    window.addEventListener('resize', handleListFormat);
+
+    return () => {
+      window.removeEventListener('resize', handleListFormat);
+    };
+  }, []);
 
   const handleFormatSelect = (e: MouseEvent<HTMLButtonElement>): void => {
     e.preventDefault;
@@ -71,6 +91,7 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
           </div>
         }
       </header>
+      {/* <p>device: {device}</p> */}
 
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
