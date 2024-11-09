@@ -10,6 +10,19 @@
   ],
   "recipes": [
     {
+      "name": "Fra Diavolo with Linguine",
+      "name_slug": "fra-diavolo-with-linguine",
+      "category": "entrees",
+      "tags": "pasta, shrimp, scallops",
+      "ingredients": "",
+      "directions": "",
+      "source": "",
+      "source_link": "",
+      "servings": "4 servings",
+      "image": "entrees_fra-diavolo-with-linguine.jpg",
+      "image_fullrecipe": "recipe_fra-diavolo-with-linguine.webp"
+    },
+    {
       "name": "Blueberry Crumble",
       "name_slug": "blueberry-crumble",
       "category": "desserts",
