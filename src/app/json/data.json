@@ -131,7 +131,7 @@
       "name_slug": "baby-aubergines-braised-greens-and-lamb-with-peppers",
       "category": "entrees",
       "tags": "lamb, peppers, eggplant",
-      "ingredients": "<a href=\"/pdfs/entrees_baby-aubergines-braised-greens-and-lamb-with-peppers.pdf\" target=\"_blank\" class=\"underline\">View recipe in PDF</a>",
+      "ingredients": "<a href=\"/pdfs/entrees_baby-aubergines-braised-greens-and-lamb-with-peppers.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">View recipe in PDF <span className=\"sr-only\">: opens in a new window</span></a>",
       "directions": "",
       "source": "Yotam Ottolenghi",
       "source_link": "https://amp.theguardian.com/food/2024/jan/13/baby-aubergines-braised-greens-lamb-neck-slow-cooked-winter-warmer-recipes-yotam-ottolenghi",

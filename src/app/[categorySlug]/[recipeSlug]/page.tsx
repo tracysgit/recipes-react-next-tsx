@@ -51,7 +51,7 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
                 {recipe.source && 
                   <p className="text-lg text-gray-900 dark:text-white"><span className="font-semibold">Source: </span>
                     {recipe.source_link ? (
-                      <a href={recipe.source_link} target="_blank" className="underline">{recipe.source}</a>
+                      <a href={recipe.source_link} target="_blank" rel="noopener noreferrer" className="underline">{recipe.source} <span className="sr-only">: opens in a new window</span></a>
                     ) : (
                       <>{recipe.source}</>
                     )}
