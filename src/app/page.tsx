@@ -3,7 +3,7 @@ import { getCategories, getRecipes } from '@/app/lib/localdata';
 import { sortArrayOfObjAsc } from "@/app/utils/utils";
 // import HeaderPage from '@/app/components/header-page/header-page';
 import Search from '@/app/components/search/search';
-import RecipesByCategory from '@/app/components/recipes/recipes-by-category.tsx';
+import RecipesByCategory from '@/app/components/recipes/recipes-by-category';
 import { TCategories, TRecipes } from '@/app/lib/definitions';
 // import H1Headline from './components/headlines/h1Headline';
 

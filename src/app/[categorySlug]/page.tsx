@@ -1,6 +1,6 @@
 import { getRecipes, getRecipesByCategory } from '@/app/lib/localdata';
 import { capFirstLetter, sortArrayOfObjAsc } from "@/app/utils/utils";
-import RecipesByCategory from '@/app/components/recipes/recipes-by-category.tsx';
+import RecipesByCategory from '@/app/components/recipes/recipes-by-category';
 import { notFound } from 'next/navigation';
 import Search from '@/app/components/search/search';
 import { TRecipes } from '@/app/lib/definitions';
