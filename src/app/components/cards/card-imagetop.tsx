@@ -10,7 +10,7 @@ interface CardImageTopProps {
 
 export default function CardImageTop({ card, linkRoute }: CardImageTopProps) {
   return (
-    <div className="card h-full max-w-full rounded-lg border border-gray-200 hover:border-gray-300 bg-white shadow hover:shadow-xl dark:bg-neutral-700 opacity-100 transition duration-300 ease-in-out hover:opacity-90">
+    <div className="card h-full max-w-full rounded-lg border border-gray-200 hover:border-gray-300 bg-white shadow hover:shadow-xl dark:bg-gray-700 opacity-100 transition duration-300 ease-in-out hover:opacity-90">
       <Link href={`${linkRoute}/${card.name_slug}`}>
         <Image
             src={`/images/${card.image ? card.image : 'image_placeholder.jpg'}`}
@@ -25,7 +25,7 @@ export default function CardImageTop({ card, linkRoute }: CardImageTopProps) {
             }}
         />
         <div className="card__body flex flex-col justify-between px-4 py-4">
-          <h3 className="card__title mb-0 text-xl">
+          <h3 className="card__title mb-0 text-xl dark:text-white">
             {card.name}
           </h3>
         </div>

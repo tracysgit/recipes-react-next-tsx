@@ -43,7 +43,7 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
         <>
           <HeaderPage h1Id="header-page__headline" h1Text={recipe.name} hasBreadcrumbs={true} hasSearch={false} />
           
-          <section aria-labelledby="headline-recipe" className="recipe__wrapper grid md:grid-cols-1 gap-8">
+          <section aria-labelledby="headline-recipe" className="recipe__wrapper grid md:grid-cols-1 gap-8 dark:text-white">
             <div className="recipe__intro grid md:grid-cols-2 gap-4">
               <div className="recipe__title flex flex-col order-last md:order-first"> 
                 {recipe.servings && <p className="text-lg text-gray-900 dark:text-white mt-2 md:mt-0"><span className="font-semibold">Servings: </span>{recipe.servings}</p>}
@@ -51,7 +51,7 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
                 {recipe.source && 
                   <p className="text-lg text-gray-900 dark:text-white"><span className="font-semibold">Source: </span>
                     {recipe.source_link ? (
-                      <a href={recipe.source_link} target="_blank" rel="noopener noreferrer" className="underline">{recipe.source} <span className="sr-only">: opens in a new window</span></a>
+                      <a href={recipe.source_link} target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600 dark:hover:text-gray-400">{recipe.source} <span className="sr-only">: opens in a new window</span></a>
                     ) : (
                       <>{recipe.source}</>
                     )}
@@ -62,7 +62,7 @@ export default async function RecipeSlugPage({ params }: { params: { recipeSlug:
                     return (
                       <span
                         key={index}
-                        className="mb-1 mr-2 mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+                        className="mb-1 mr-2 mt-2 inline-block rounded-full bg-gray-200 dark:bg-gray-700 px-3 py-1 text-sm font-semibold text-gray-900 dark:text-white"
                       >
                         #{tag.trim()}
                       </span>

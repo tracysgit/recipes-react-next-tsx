@@ -95,7 +95,7 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
 
       {categories.map((category) => 
         <section key={category} id={`section--${category}`} aria-labelledby={`headline--${category}`} className="">
-          {showH2Headline && <h2 id={`headline--${category}`} className="text-4xl lg:text-5xl text-blue-800 dark:text-blue-300 font-sacramento mb-0">
+          {showH2Headline && <h2 id={`headline--${category}`} className="text-4xl lg:text-5xl text-blue-800 dark:text-white font-sacramento mb-0">
             <Link href={`/${category.toLowerCase()}`} className="hover:underline">
               {capFirstLetter(category)}
             </Link>
@@ -111,13 +111,14 @@ export default function RecipesByCategory({ showH2Headline, showFormatToggle, fo
                 )
                 .map((recipe, index) => {
                   return (
-                    <li key={index} className="text-lg mb-[5px] mr-2">
-                      <Link href={`/${recipe.category}/${recipe.name_slug}`} className="underline hover:text-gray-600">{recipe.name}</Link>
+                    <li key={index} className="text-lg mb-[5px] mr-2 dark:text-white">
+                      <Link href={`/${recipe.category}/${recipe.name_slug}`} className="underline hover:text-gray-600 dark:hover:text-gray-400">{recipe.name}</Link>
                     </li>
                   );
                 })}
             </ul>
           }
+
           {format === 'cards' &&
             <ul className={`deck--grid-card mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ${deckClasses}`}>
               {recipes && recipes

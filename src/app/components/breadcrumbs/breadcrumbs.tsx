@@ -11,7 +11,7 @@ export default function Breadcrumbs() {
   const separatorSymbol = "/"
   const listItemClasses = 'inline';
   const linkClasses = 'underline';
-  const activeClasses = 'text-blue-800 dark:text-white underline font-bold';
+  const activeClasses = 'text-blue-800 underline font-bold';
 
   return (
     <>
@@ -22,7 +22,9 @@ export default function Breadcrumbs() {
               Home
             </Link>
             {pathNames.length > 0 && 
-              <span aria-hidden="true">&nbsp;{separatorSymbol}&nbsp;</span>
+              <span 
+                aria-hidden="true" 
+              >&nbsp;{separatorSymbol}&nbsp;</span>
             }
           </li>
           {pathNames.map( (link, index) => {
@@ -31,7 +33,7 @@ export default function Breadcrumbs() {
             
             return (
               <li key={index} className={`breadcrumb ${listItemClasses}`}>
-                <Link href={href} className={`${itemClasses}`}>
+                <Link href={href} className={`${itemClasses} dark:text-white`}>
                   {link}
                 </Link>
                 {pathNames.length !== index + 1 && 

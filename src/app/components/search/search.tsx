@@ -46,14 +46,14 @@ export default function Search({ recipes }: SearchProps) {
             Search
           </label>
           <input
-            className="peer block w-full rounded-s-md border-2 border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+            className="peer block w-full rounded-s-md border-2 border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white dark:focus:border-blue-500"
             placeholder="Search recipes..."
             value={searchInput}
             onChange={(e) => {
               handleSearch(e.target.value);
             }}
           />
-          <MagnifyingGlassIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" focusable="false" />
+          <MagnifyingGlassIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900 dark:text-white" focusable="false" />
           <button 
             id="reset-search"
             type="reset"
@@ -67,7 +67,7 @@ export default function Search({ recipes }: SearchProps) {
         </div>
       </div>
       {searchInput && 
-        <div className="search__results bg-neutral-100 rounded-lg border border-neutral-200 p-4 md:p-6 w-full mt-4">
+        <div className="search__results bg-neutral-100 dark:bg-gray-700 rounded-lg border border-neutral-200 p-4 md:p-6 w-full mt-4">
           <p className="text-lg font-semibold text-gray-900 dark:text-white">Search Results:</p>
           {searchResults && searchResults.length > 0 ? (
               <ul className="list-disc columns-1 md:columns-2 gap-8 ml-6 mt-4">

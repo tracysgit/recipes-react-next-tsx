@@ -23,7 +23,7 @@ export default function HeaderPage({ h1Id, h1Text, hasBreadcrumbs, hasSearch, ha
 
   return (
     <>
-      <header className="header-page mb-2 md:mb-4 lg:mb-6">
+      <header className="header-page mb-2 md:mb-4 lg:mb-6 dark:text-white">
         <div className={`flex flex-col md:flex-row gap-4 justify-between ${addSpaceBelow}`}>
           {hasBreadcrumbs && <Breadcrumbs />}
           {/* {hasSearch && <Search />} */}

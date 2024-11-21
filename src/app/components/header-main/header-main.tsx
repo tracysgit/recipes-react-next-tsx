@@ -9,7 +9,7 @@ export default async function HeaderMain() {
   // const recipesAscending: TRecipes = sortArrayOfObjAsc(recipes, 'name');
 
   return (
-    <header className="header-main bg-blue-800 text-white">
+    <header className="header-main bg-blue-800 dark:bg-gray-700 text-white">
       <div className="max-w-[1100px] px-4 md:px-6 mx-auto">
         <MainMenu />
         {/* <Search recipes={recipesAscending} /> */}
