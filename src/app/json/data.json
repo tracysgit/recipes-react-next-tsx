@@ -10,6 +10,19 @@
   ],
   "recipes": [
     {
+      "name": "Bûche de Noël",
+      "name_slug": "buche-de-noel",
+      "category": "desserts",
+      "tags": "christmas, holiday, log, buche, noel",
+      "ingredients": "",
+      "directions": "",
+      "source": "",
+      "source_link": "",
+      "servings": "8 servings",
+      "image": "desserts_buch-de-noel.webp",
+      "image_fullrecipe": "recipe_buch-de-noel.webp"
+    },
+    {
       "name": "Butternut Squash Soup with Brown Butter",
       "name_slug": "butternut-squash-soup-with-brown-butter",
       "category": "soups",
