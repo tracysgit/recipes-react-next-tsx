@@ -1,0 +1,109 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer base {
+  html {
+    font-size: 1rem;
+  }
+  body {
+    font-family: var(--font-urbanist);
+  }
+  h1 {
+    font-size: var(--text-3xl);
+  }
+  h2 {
+    font-family: var(--font-sacramento);
+    font-size: var(--text-xl);
+    /* color: var(--color-blue-800); */
+  }
+  h2.headline__plain {
+    font-family: var(--font-urbanist);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: currentColor;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: var(--text-lg);
+  }
+  a {
+    text-underline-offset: 2px;
+    color: var(--color-blue-800);
+  }
+  a:hover {
+    /* text-decoration: none; */
+    color: var(--color-blue-900);
+  }
+  a:not(:is(:hover, :focus)) {
+    text-decoration-color: 
+      color-mix(in srgb, currentColor, transparent 60%);
+  }
+  a.mainmenu__link {
+    color: white;
+    text-decoration-color: 
+      color-mix(in srgb, currentColor, transparent 40%);
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
+  .bg-blue-500\/50 {
+    background-color: color-mix(in oklab, var(--color-blue-500) 50%, transparent);
+  }
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+
+:root {
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
+
+  a {
+    color: var(--color-white);
+  }
+
+  a:hover {
+    color: var(--color-blue-100);
+  }
+
+  input,
+  input::placeholder {
+    color: white;
+  }
+
+  li::marker {
+    color: white;
+  }
+
+  .search__results,
+  .searchbox__wrapper svg path,
+  .headline__plain {
+    color: white;
+  }
+
+  .recipe-card {
+    background-color: #212121;
+    border-color: #555;
+  }
+}
+
+
+
