@@ -27,7 +27,6 @@ export default async function HomePage() {
     <>
       <Suspense fallback={<div>Loading...</div>}>
         <RecipesByCategory categories={categories} recipes={recipes} />
-        <p>Home page</p>
       </Suspense> 
     </>  
   );
