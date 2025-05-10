@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 65, "column": 0}, "map": {"version":3,"sources":["file:///Users/tracysayre/Documents/Web%20Dev/Recipes/recipes-react-next-tsx/src/app/api/category/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nimport DATA from \"../db.json\";\n\n/**\n * The Category route.\n * @constructor\n */\nexport async function GET() {\n  return NextResponse.json(DATA.categories);\n}"],"names":[],"mappings":";;;AAAA;AAEA;;;AAMO,eAAe;IACpB,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC,+FAAA,CAAA,UAAI,CAAC,UAAU;AAC1C","debugId":null}}]
+}

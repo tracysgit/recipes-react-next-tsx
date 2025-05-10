@@ -1,0 +1,9 @@
+{
+  "/api/category/route": "/api/category",
+  "/favicon.ico/route": "/favicon.ico",
+  "/api/recipe/route": "/api/recipe",
+  "/_not-found/page": "/_not-found",
+  "/[category]/page": "/[category]",
+  "/[category]/[recipeSlug]/page": "/[category]/[recipeSlug]",
+  "/page": "/"
+}
