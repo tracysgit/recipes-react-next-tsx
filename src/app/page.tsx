@@ -16,8 +16,13 @@ export const metadata: Metadata = {
  * @constructor
  */
 export default async function HomePage() {
-  const recipes: IRecipe[] = await getRecipes();
-  const categories: string[] = await getCategories();
+  const recipesPromise: Promise<IRecipe[]> = getRecipes();
+  const categoriesPromise: Promise<string[]> = getCategories();
+  const [recipes, categories] = await Promise.all([
+    recipesPromise,
+    categoriesPromise,
+  ]);
+  
 
   if (!recipes) {
     notFound();

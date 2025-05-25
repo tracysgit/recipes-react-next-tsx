@@ -1,7 +1,7 @@
 {
   "/api/category/route": "/api/category",
-  "/favicon.ico/route": "/favicon.ico",
   "/api/recipe/route": "/api/recipe",
+  "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
   "/[category]/page": "/[category]",
   "/[category]/[recipeSlug]/page": "/[category]/[recipeSlug]",

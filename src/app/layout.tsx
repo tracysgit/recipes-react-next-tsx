@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     default: 'Recipes',
   },
   description: 'A collection of favorite family recipes',
+  robots: 'noindex,nofollow',
 };
 
 /**

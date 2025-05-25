@@ -7,7 +7,7 @@ import Image from 'next/image';
 import HeaderPage from '@/app/components/ui/header/PageHeader';
 import DynamicHeading from '@/app/components/ui/headline/DynamicHeading';
 
-export const dynamic = "force-dynamic";
+export const dynamic = "auto";
 
 export async function generateMetadata({ 
   params 
