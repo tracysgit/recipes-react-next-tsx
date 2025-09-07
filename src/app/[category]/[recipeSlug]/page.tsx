@@ -119,7 +119,7 @@ export default async function RecipePage({ params }: { params: Promise<{ recipeS
                 {ingredients_edited && 
                 <div className="recipe__ingredients lg:max-w-[80%] text-lg">
                   <h2 className="headline__plain">Ingredients</h2>
-                  <ul className="[&>li]:mt-2">
+                  <ul className="group [&>li]:mt-2 [&_li:has(strong)]:mt-6">
                     {parse(ingredients_edited)}
                   </ul>
                 </div>

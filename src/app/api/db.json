@@ -10,6 +10,18 @@
   ],
   "recipes": [
     {
+      "name": "Apple Gâteau Invisible",
+      "name_slug": "apple-gateau-invisible",
+      "category": "desserts",
+      "tags": "apples, cream",
+      "ingredients": "",
+      "directions": "",
+      "source": "Cook's Illustrated, September & October 2025",
+      "servings": "6",
+      "image": "desserts_apple-gateau-invisible.webp",
+      "image_fullrecipe": "recipe_apple-gateau-invisible.webp"
+    },
+    {
       "name": "Bûche de Noël",
       "name_slug": "buche-de-noel",
       "category": "desserts",

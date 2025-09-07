@@ -1,1 +1,23 @@
-{"pages":{},"app":{"/Users/tracysayre/Documents/Web Dev/Recipes/recipes-react-next-tsx/src/app/layout":["static/media/dd053ec84d009e81-s.p.woff2","static/media/01af0fc7b4278e65-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/src/app/[category]/[recipeSlug]/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/buEzpo6gcdjy0EiZMBUG4C0f_f5Iai0-s.p.a5fcf4c6.woff2"
+    ],
+    "[project]/src/app/[category]/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/buEzpo6gcdjy0EiZMBUG4C0f_f5Iai0-s.p.a5fcf4c6.woff2"
+    ],
+    "[project]/src/app/_not-found/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/buEzpo6gcdjy0EiZMBUG4C0f_f5Iai0-s.p.a5fcf4c6.woff2"
+    ],
+    "[project]/src/app/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/buEzpo6gcdjy0EiZMBUG4C0f_f5Iai0-s.p.a5fcf4c6.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
