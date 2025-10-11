@@ -10,6 +10,18 @@
   ],
   "recipes": [
     {
+      "name": "Tarte Tatin",
+      "name_slug": "tarte-tatin",
+      "category": "desserts",
+      "tags": "apples, pears, caramel",
+      "ingredients": "",
+      "directions": "",
+      "source": "Cook's Illustrated",
+      "servings": "8",
+      "image": "desserts_tarte-tatin.jpg",
+      "image_fullrecipe": "recipe_tarte-tatin.webp"
+    },
+    {
       "name": "Apple Gâteau Invisible",
       "name_slug": "apple-gateau-invisible",
       "category": "desserts",
