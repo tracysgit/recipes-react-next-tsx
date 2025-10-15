@@ -10,6 +10,18 @@
   ],
   "recipes": [
     {
+      "name": "French Mussel Bisque (Billi Bi)",
+      "name_slug": "french-mussel-bisque",
+      "category": "soups",
+      "tags": "mussels, cream",
+      "ingredients": "",
+      "directions": "",
+      "source": "Cook's Illustrated, November & December 2025",
+      "servings": "4",
+      "image": "soups_french-mussel-bisque.jpg",
+      "image_fullrecipe": "recipe_french-mussel-bisque.webp"
+    },
+    {
       "name": "Tarte Tatin",
       "name_slug": "tarte-tatin",
       "category": "desserts",

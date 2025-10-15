@@ -36,7 +36,7 @@ export default function RecipeCard({
             priority={index <= 3 ? true : false}
         />
         <div className="card__body flex flex-col justify-between px-4 py-4">
-          <p className="card__title mb-0 text-xl">
+          <p className="card__title mb-0 text-xl text-pretty">
             {recipe.name}
           </p>
         </div>
