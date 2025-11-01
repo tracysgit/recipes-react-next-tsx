@@ -1,8 +1,8 @@
 import { IRecipe } from "../utils/types/types";
 
 //TODO This must be altered for Dev and Published
-// const API_URL = "http://localhost:3000/api";
-const API_URL = "https://recipes-react-next-tsx.vercel.app/api";
+const API_URL = "http://localhost:3000/api";
+// const API_URL = "https://recipes-react-next-tsx.vercel.app/api";
 
 /**
  * GetCategories

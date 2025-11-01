@@ -59,7 +59,7 @@ export default async function RecipePage({ params }: { params: Promise<{ recipeS
             <DynamicHeading level="h1" id="headline-recipe">{recipe.name}</DynamicHeading>
           </HeaderPage>
           
-          <section aria-labelledby="headline-recipe" className="recipe__wrapper grid md:grid-cols-1 gap-8">
+          <section aria-labelledby="headline-recipe" className="recipe__wrapper grid md:grid-cols-1 gap-8 mb-6">
             <div className="recipe__intro grid md:grid-cols-2 gap-4">
               <div className="recipe__title flex flex-col order-last md:order-first"> 
                 {recipe.servings && <p className="text-lg mt-2 md:mt-0"><span className="font-semibold">Servings: </span>{recipe.servings}</p>}

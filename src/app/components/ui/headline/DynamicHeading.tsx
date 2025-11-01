@@ -28,8 +28,8 @@ function DynamicHeading({
   return <HeadingTag 
     id={id} 
     className={clsx({
-      'text-3xl lg:text-4xl font-semibold': level === "h1",
-      'text-blue-800 font-semibold font-sacramento mb-3': level === "h2",
+      'text-3xl lg:text-4xl font-semibold text-pretty': level === "h1",
+      'text-blue-800 font-semibold font-sacramento text-pretty mb-3': level === "h2",
       },
       className)}
     >{children}</HeadingTag>;

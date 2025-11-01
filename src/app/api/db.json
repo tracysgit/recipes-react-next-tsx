@@ -10,6 +10,42 @@
   ],
   "recipes": [
     {
+      "name": "Shoofly Pie",
+      "name_slug": "shoofly-pie",
+      "category": "desserts",
+      "tags": "sweet, Amish",
+      "ingredients": "<strong>Crumb Topping</strong>\n1 c. all-purpose white flour\n1/2 c. light-brown sugar\n1/4 c. solid vegetable shortening or butter, chilled\n<strong>Filliing</strong>\n1 c. boiling water\n1 t. baking soda\n1/2 c. light corn syrup\n1/2 c. dark molasses\n1/4 t. salt",
+      "directions": "Preheat oven to 375&#8457;.<br /><br />Stir boiling water and baking soda together until soda dissolves. Add corn syrup, molasses, and salt, and stir together to blend. Cool slightly, then pour mixture into deep-dish pie shell. Sprinkle crumb mixture on top and bake for 10 minutes at 375&#8457;, then lower heat to 350&#8457; and continue baking for about 30 minutes more, or until set.",
+      "source": "",
+      "servings": "8 servings",
+      "image": "desserts_shoofly-pie.webp",
+      "image_fullrecipe": ""
+    },
+    {
+      "name": "Cranberry Orange Quickbread",
+      "name_slug": "cranberry-orange-quickbread",
+      "category": "desserts",
+      "tags": "orange, cranberry",
+      "ingredients": "1-½ c. all-purpose flour (~263g)\n1/2 c. whole-wheat flour (~80g)\n2/3 c. white sugar\n1-½ t. baking powder\n1/2 t. baking soda\n1/2 t. salt\n1 t. grated orange zest, packed\n2 large eggs\n1/2 c. canola oil\n1/2 c. plain Greek yogurt\n1/2 c. orange juice\n1-½ c. fresh cranberries, halved",
+      "directions": "Preheat oven to 350&#8457;. Butter and flour an loaf pan and set aside.<br /><br />In a large bowl, whisk together flours, sugar, baking powder, baking soda, salt and orange zest. In a separate medium-sized bowl, whisk together eggs, oil, yogurt, and orange juice. Add the wet ingredients to the dry ingredients and stir until just incorporated. Fold in the cranberries. <br /><br />Pour batter into a 8-½\" x 4-½\" loaf pan and bake 45-55 minutes, turning halfway or until a toothpick comes out clean. Cool on a wire rack for 30 minutes before removing from pan. Serve warm.",
+      "source": "",
+      "servings": "8-½ in x 4-½ in bread loaf",
+      "image": "desserts_cranberry-orange-quickbread.webp",
+      "image_fullrecipe": ""
+    },
+    {
+      "name": "Rice Krispie Treats with Browned Butter",
+      "name_slug": "rice-krispie-treats",
+      "category": "desserts",
+      "tags": "butter, marshmallows",
+      "ingredients": "½ c. butter\n2, 10-ounce bags of marshmallows\n1 t. vanilla\nApproximately 12 c. Rice Krispie cereal",
+      "directions": "Melt butter in a large saucepan over low heat. Cook until the butter is browned and contains browned bits (not dark brown or black) in the bottom of the pan.<br /><br />Using a microwave or range, melt the marshmallows with the butter and stir until smooth and well combined. Note: You may need to split the butter and marshmallows into smaller, more-manageable batches. Add the vanilla to the smooth melted marshmallow mixture.<br /><br />Stir in crispy rice cereal until well coated, but you can add more or less cereal as you prefer. Press mixture evenly and firmly into a buttered 9 in x 13 in pan using buttered hands or waxed paper. Cut into two-inch squares when cool.",
+      "source": "",
+      "servings": "9 in x 13 in pan",
+      "image": "desserts_rice-krispie-treats.jpg",
+      "image_fullrecipe": ""
+    },
+    {
       "name": "French Mussel Bisque (Billi Bi)",
       "name_slug": "french-mussel-bisque",
       "category": "soups",
@@ -557,7 +593,7 @@
       "name_slug": "anise-cookies",
       "category": "desserts",
       "tags": "cookie, anise, butter, sweet",
-      "ingredients": "4 c. flour\n1 t. baking powder\n1 t. baking soda\n2 sticks butter\n2 eggs\n2 T. milk\n2 c. sugar\n1/2 t. anise oil or 3-4 t. anise extract",
+      "ingredients": "4 c. flour\n1 t. baking powder\n1 t. baking soda\n1/4 t. salt\n2 sticks butter\n2 eggs\n2 T. milk\n2 c. sugar\n1/2 t. anise oil or 3-4 t. anise extract",
       "directions": "Preheat oven to 350&#8457;.\nCombine dry ingredients. Combine remaining ingredients in a separate bowl. Combine all ingredients and mix.\nDivide dough into two balls and refrigerate. Roll out dough to 1/8 in. thick. Bake for approximately 5 minutes.",
       "source": "Grandma Krebs",
       "source_link": "",
