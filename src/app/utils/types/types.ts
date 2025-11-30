@@ -1,17 +1,18 @@
 export interface IRecipe {
-  name: string;
-  name_slug: string;
   category: string;
-  tags?: string;
-  ingredients?: string;
   directions?: string;
-  source?: string;
-  source_link?: string;
-  servings?: string;
+  directions_edited?: string;
   image?: string;
   image_fullrecipe?: string;
   ingredients_edited?: string;
-  directions_edited?: string;
+  ingredients?: string;
+  name: string;
+  name_slug: string;
+  notes?: string;
+  source?: string;
+  source_link?: string;
+  servings?: string;
+  tags?: string;
   tags_array?: string[];
 };
 

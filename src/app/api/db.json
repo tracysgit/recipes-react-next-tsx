@@ -10,6 +10,68 @@
   ],
   "recipes": [
     {
+      "name": "Rustic Bread Stuffing with Dried Cranberries, Hazelnuts & Oyster Mushrooms",
+      "name_slug": "rustic-bread-stuffing-with-dried-cranberries",
+      "category": "sides",
+      "tags": "stuffing, oyster mushrooms",
+      "ingredients": "",
+      "directions": "",
+      "source": "Fine Cooking, November 2008",
+      "servings": "8-10",
+      "image": "sides_stuffing-with-dried-cranberries.webp",
+      "image_fullrecipe": "recipe_stuffing-with-dried-cranberries.webp"
+    },
+    {
+      "name": "Sugar & Spice Pumpkin Pie with Brandied Ginger Cream",
+      "name_slug": "sugar-and-spice-pumpkin-pie",
+      "category": "desserts",
+      "tags": "pumpkin, brandy",
+      "ingredients": "",
+      "directions": "",
+      "source": "Fine Cooking, November 2008",
+      "servings": "8-10",
+      "image": "desserts_sugar-and-spice-pumpkin-pie.webp",
+      "image_fullrecipe": "recipe_sugar-and-spice-pumpkin-pie.webp"
+    },
+    {
+      "name": "Roasted Turkey with Juniper-Ginger Butter and Pan Gravy",
+      "name_slug": "roasted-turket-with-juniper-ginger-butter",
+      "category": "entrees",
+      "tags": "turkey, juniper, gravy",
+      "ingredients": "",
+      "directions": "",
+      "source": "Fine Cooking, November 2008",
+      "servings": "8-12",
+      "image": "entrees_roasted-turket-with-juniper-ginger-butter.webp",
+      "image_fullrecipe": "recipe_roasted-turket-with-juniper-ginger-butter.webp"
+    },
+    {
+      "name": "Mashed Potatoes with Caramelized Shallots",
+      "name_slug": "mashed-potatoes-with-caramelized-shallots",
+      "category": "sides",
+      "tags": "potatoes, crème fraîche",
+      "notes": "For a less rich version, use less butter.",
+      "ingredients": "",
+      "directions": "",
+      "source": "Fine Cooking, November 2008",
+      "servings": "8",
+      "image": "sides_mashed-potatoes-with-caramelized-shallots.webp",
+      "image_fullrecipe": "recipe_mashed-potatoes-with-caramelized-shallots.webp"
+    },
+    {
+      "name": "Maple-Tangerine Cranberry Sauce",
+      "name_slug": "maple-tangerine-cranberry-sauce",
+      "category": "sides",
+      "tags": "cranberries, maple syrup",
+      "notes": "Feel free to substitute fresh oranges for tangerines.",
+      "ingredients": "",
+      "directions": "",
+      "source": "Fine Cooking, November 2008",
+      "servings": "12",
+      "image": "sides_maple-tangerine-cranberry-sauce.webp",
+      "image_fullrecipe": "recipe_maple-tangerine-cranberry-sauce.webp"
+    },
+    {
       "name": "Shoofly Pie",
       "name_slug": "shoofly-pie",
       "category": "desserts",

@@ -99,6 +99,13 @@ export default async function RecipePage({ params }: { params: Promise<{ recipeS
                 }}
               />}
             </div>
+            {recipe.notes && (
+              <>
+              {/* <div className="pt-3 flex items-center text-md font-bold before:flex-1 before:border-t-2 before:border-gray-200 before:me-6 after:flex-1 after:border-t-2 after:border-gray-200 after:ms-6 dark:text-white dark:before:border-neutral-600 dark:after:border-neutral-600">Notes</div> */}
+              <div><p className="text-lg"><span className="font-semibold">Notes: </span>{recipe.notes}</p>
+              </div>
+              </>
+            )}
             {recipe['image_fullrecipe'] ? (
               <div className="recipe__directions">
                 <Image
