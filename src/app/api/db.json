@@ -10,6 +10,19 @@
   ],
   "recipes": [
     {
+      "name": "Basque-Style Cheesecake",
+      "name_slug": "basque-style-cheesecake",
+      "category": "desserts",
+      "tags": "cheesecake",
+      "ingredients": "",
+      "directions": "",
+      "source": "Milk Street",
+       "source_link": "https://www.177milkstreet.com/recipes/basque-cheesecake",
+      "servings": "8-10",
+      "image": "desserts_basque-style-cheesecake.jpg",
+      "image_fullrecipe": "recipe_basque-style-cheesecake.webp"
+    },
+    {
       "name": "Rustic Bread Stuffing with Dried Cranberries, Hazelnuts & Oyster Mushrooms",
       "name_slug": "rustic-bread-stuffing-with-dried-cranberries",
       "category": "sides",
