@@ -35,6 +35,7 @@ export default async function RecipePage({ params }: { params: Promise<{ recipeS
   const recipe: IRecipe | undefined = await getRecipeByNameSlug(recipeSlug);
   let ingredients_edited:string = ''; 
   let directions_edited:string = ''; 
+  let notes_edited:string = ''; 
   let tags_array: Array<string> = [];
 
   if (recipe) {
@@ -45,6 +46,10 @@ export default async function RecipePage({ params }: { params: Promise<{ recipeS
     if ('directions' in recipe) {
       directions_edited = recipe.directions?.replace(/<br \/><br \/>/g, `</p><p>`) ?? '';
       directions_edited = directions_edited !== '' ? `<p>${directions_edited}</p>` : '';
+    }
+    if ('notes' in recipe) {
+      notes_edited = recipe.notes?.replace(/<br \/><br \/>/g, `</p><p>`) ?? '';
+      notes_edited = notes_edited !== '' ? `<p>${notes_edited}</p>` : '';
     }
     if ('tags' in recipe && recipe.tags !== '') {
       tags_array = (recipe.tags)?.split(',') ?? [''];
@@ -99,13 +104,13 @@ export default async function RecipePage({ params }: { params: Promise<{ recipeS
                 }}
               />}
             </div>
-            {recipe.notes && (
-              <>
-              {/* <div className="pt-3 flex items-center text-md font-bold before:flex-1 before:border-t-2 before:border-gray-200 before:me-6 after:flex-1 after:border-t-2 after:border-gray-200 after:ms-6 dark:text-white dark:before:border-neutral-600 dark:after:border-neutral-600">Notes</div> */}
-              <div><p className="text-lg"><span className="font-semibold">Notes: </span>{recipe.notes}</p>
+            {notes_edited && 
+              <div className="recipe__directions lg:max-w-[80%] text-lg [&>p]:mt-6">
+                <h2 className="headline__plain">Notes</h2>
+                {parse(notes_edited)}
               </div>
-              </>
-            )}
+            }
+
             {recipe['image_fullrecipe'] ? (
               <div className="recipe__directions">
                 <Image
