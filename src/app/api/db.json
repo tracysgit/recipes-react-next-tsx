@@ -6,6 +6,7 @@
     "salads",
     "sides",
     "desserts",
+    "other",
     "drinks"
   ],
   "recipes": [
@@ -315,14 +316,14 @@
     {
       "name": "Fresh Pasta",
       "name_slug": "fresh-pasta",
-      "category": "entrees",
+      "category": "other",
       "tags": "noodles, pasta",
       "ingredients": "",
       "directions": "",
       "source": "",
       "source_link": "",
       "servings": "4-6",
-      "image": "entrees_fresh-pasta.jpg",
+      "image": "other_fresh-pasta.jpg",
       "image_fullrecipe": "recipe_fresh-pasta.jpg"
     },
     {
@@ -354,14 +355,14 @@
     {
       "name": "Fresh Spinach Pasta",
       "name_slug": "fresh-spinach-pasta",
-      "category": "entrees",
+      "category": "other",
       "tags": "pasta, spinach",
       "ingredients": "",
       "directions": "",
       "source": "",
       "source_link": "",
       "servings": "8-10",
-      "image": "entrees_fresh-spinach-pasta.png",
+      "image": "other_fresh-spinach-pasta.png",
       "image_fullrecipe": "recipe_fresh-spinach-pasta.jpg"
     },
     {
