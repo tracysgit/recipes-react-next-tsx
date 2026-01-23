@@ -21,7 +21,16 @@ export const metadata: Metadata = {
     default: 'Recipes',
   },
   description: 'A collection of favorite family recipes',
-  robots: 'noindex,nofollow',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  }
 };
 
 /**

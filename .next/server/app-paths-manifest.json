@@ -1,4 +1,6 @@
 {
+  "/[category]/[recipeSlug]/page": "app/[category]/[recipeSlug]/page.js",
+  "/[category]/page": "app/[category]/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/category/route": "app/api/category/route.js",
   "/api/recipe/route": "app/api/recipe/route.js",

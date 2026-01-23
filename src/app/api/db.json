@@ -10,6 +10,29 @@
     "drinks"
   ],
   "recipes": [
+    {
+      "name": "Ribollita",
+      "name_slug": "ribolita",
+      "category": "soups",
+      "tags": "tomato, vegetables",
+      "ingredients": "",
+      "directions": "",
+      "source": "",
+      "source_link": "",
+      "servings": "6-8",
+      "image": "soups_ribollita.jpg",
+      "image_fullrecipe": "recipe_ribollita.webp"
+    },
+     {
+      "name": "Pizza Sauce",
+      "name_slug": "pizza-sauce",
+      "category": "other",
+      "tags": "tomato, basil",
+      "ingredients": "2 T. butter or olive oil\n28 oz. can of tomatoes\n1 small shallot\n2 cloves garlic\n2 T. tomato paste\nSplash of red wine\n1 T. sugar\n1½ t. dried oregano\n1½ t. dried basil\n1 t. ground fennel\n⅛ t. red pepper flakes\n1 to 2 t. salt\nGround black pepper\nOlive oil\nFresh basil",
+      "directions": "Add 2 T. of butter or olive oil to a hot pan. Cook the shallot with a little salt until golden (about 5 minutes). Add garlic and cook until fragrant (about 30 seconds). Drop tomato paste into a hot spot and brown it slightly (about 1 minute). Deglaze with a splash of red wine. Add other ingredients except for fresh basil and bring to a simmer. Lower heat and cook until reduced to roughly 2½ cups in volume or desired consistency (about 25-30 minutes). Off the heat, add fresh basil and more olive oil. Adjust salt and pepper to taste.",
+      "servings": "",
+      "image": "other_pizza-sauce.jpg"
+    },
      {
       "name": "Basque-Style Cheesecake",
       "name_slug": "basque-style-cheesecake",
