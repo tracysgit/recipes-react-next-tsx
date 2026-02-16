@@ -24,14 +24,24 @@
       "image_fullrecipe": "recipe_ribollita.webp"
     },
      {
-      "name": "Pizza Sauce",
-      "name_slug": "pizza-sauce",
+      "name": "Pizza Sauce - Thin Crust",
+      "name_slug": "pizza-sauce-thin-crust",
+      "category": "other",
+      "tags": "tomato, basil",
+      "ingredients": "28 oz. can of tomatoes\n2 anchovies, fried\n2 cloves garlic, smashed and fried\n1 clove fresh garlic\n1 T. tomato paste\n1 T. orange juice\n1 t. sugar\n1 T. fresh oregano\n1 t. dried oregano\n⅛ t. red pepper flakes\n1 to 2 t. salt\nGround black pepper\nOlive oil\nFresh basil",
+      "directions": "Add 2 cloves smashed garlic and anchovies to olive oil in a hot pan. Cook the garlic and anchovies with a little salt until golden. Drop tomato paste into a hot spot and brown it slightly (about 1 minute). Deglaze with a splash of orange juice. Add other ingredients except for fresh basil and bring to a simmer. Lower heat and cook until reduced to desired consistency. Off the heat, add fresh basil and more olive oil. Adjust salt and pepper to taste.",
+      "servings": "",
+      "image": "other_pizza-sauce-thin-crust.jpg"
+    },
+     {
+      "name": "Pizza Sauce - Deep Dish",
+      "name_slug": "pizza-sauce-deep-dish",
       "category": "other",
       "tags": "tomato, basil",
       "ingredients": "2 T. butter or olive oil\n28 oz. can of tomatoes\n1 small shallot\n2 cloves garlic\n2 T. tomato paste\nSplash of red wine\n1 T. sugar\n1½ t. dried oregano\n1½ t. dried basil\n1 t. ground fennel\n⅛ t. red pepper flakes\n1 to 2 t. salt\nGround black pepper\nOlive oil\nFresh basil",
       "directions": "Add 2 T. of butter or olive oil to a hot pan. Cook the shallot with a little salt until golden (about 5 minutes). Add garlic and cook until fragrant (about 30 seconds). Drop tomato paste into a hot spot and brown it slightly (about 1 minute). Deglaze with a splash of red wine. Add other ingredients except for fresh basil and bring to a simmer. Lower heat and cook until reduced to roughly 2½ cups in volume or desired consistency (about 25-30 minutes). Off the heat, add fresh basil and more olive oil. Adjust salt and pepper to taste.",
       "servings": "",
-      "image": "other_pizza-sauce.jpg"
+      "image": "other_pizza-sauce-deep-dish.jpg"
     },
      {
       "name": "Basque-Style Cheesecake",
@@ -679,7 +689,7 @@
       "name_slug": "sables",
       "category": "desserts",
       "tags": "cookie, punition, butter, sweet",
-      "ingredients": "140 gm unsalted butter, room temperature\n125 gm white sugar\n1 large egg, room temperature\n2 c. all-purpose flour",
+      "ingredients": "140 gm unsalted butter, room temperature\n125 gm white sugar\n1 large egg, room temperature\n280 gm all-purpose flour",
       "directions": "Cream the butter and sugar until thoroughly blended. Add the egg and stir until the mixture is smooth and satiny. Add the flour all at once and mix until the dough forms clumps and curds and looks like coarse meal. Form the dough into discs. Cover and refrigerate until firm.\nRoll out the dough to 1/8&quot; thickness. Cut the cookies with a fluted, 4cm circular cookie cutter.\nBake at 350°F for approximately 8-12 minutes or the preferred level of brownness.",
       "source": "Poilâne Bakery",
       "source_link": "https://beautifuleatingmess.blogspot.com/2014/02/poilanes-punitions-french-butter-cookies.html",
