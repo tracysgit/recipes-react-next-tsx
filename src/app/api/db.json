@@ -11,6 +11,19 @@
   ],
   "recipes": [
     {
+      "name": "Mushroom Burgers",
+      "name_slug": "mushroom-burgers",
+      "category": "entrees",
+      "tags": "beef, mushrooms",
+      "ingredients": "",
+      "directions": "",
+      "source": "Cook's Illustrated, July & August 2023",
+      "source_link": "",
+      "servings": "4",
+      "image": "entrees_mushroom-burgers.jpg",
+      "image_fullrecipe": "recipe_mushroom-burgers.webp"
+    },
+    {
       "name": "Ribollita",
       "name_slug": "ribolita",
       "category": "soups",
